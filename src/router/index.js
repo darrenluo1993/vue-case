@@ -22,6 +22,26 @@ const router = createRouter({
       name: 'elementUICase',
       component: () => import('../views/ElementUICase.vue'),
     },
+    {
+      path: '/computedProps',
+      name: 'computedProps',
+      component: () => import('../views/ComputedProps.vue'),
+    },
+    {
+      path: '/classStyleBinding',
+      name: 'classStyleBinding',
+      component: () => import('../views/ClassStyleBinding.vue'),
+    },
+    {
+      path: '/conditionalRendering',
+      name: 'conditionalRendering',
+      component: () => import('../views/ConditionalRendering.vue'),
+    },
+    {
+      path: '/listRendering',
+      name: 'listRendering',
+      component: () => import('../views/ListRendering.vue'),
+    },
   ],
 })
 

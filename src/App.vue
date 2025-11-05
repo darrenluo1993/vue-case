@@ -14,6 +14,10 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/elementUICase">Element UI Case</RouterLink>
+        <RouterLink to="/computedProps">Computed Props</RouterLink>
+        <RouterLink to="/classStyleBinding">Class Style Binding</RouterLink>
+        <RouterLink to="/conditionalRendering">Conditional Rendering</RouterLink>
+        <RouterLink to="/listRendering">List Rendering</RouterLink>
       </nav>
     </div>
   </header>
