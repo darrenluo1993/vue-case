@@ -18,7 +18,7 @@ export default {
 <template>
   <div>
     Full Name: {{ firstName }} {{ lastName }}
-    <VModelMulti v-model:first-name="firstName" v-model:last-name="lastName"/>
+    <VModelMulti v-model:first-name.trim="firstName" v-model:last-name.trim="lastName"/>
   </div>
 </template>
 
