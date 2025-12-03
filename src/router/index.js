@@ -42,6 +42,11 @@ const router = createRouter({
       name: 'listRendering',
       component: () => import('../views/ListRendering.vue'),
     },
+    {
+      path: '/VModelCase',
+      name: 'VModelCase',
+      component: () => import('../views/VModelCase.vue'),
+    }
   ],
 })
 

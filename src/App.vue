@@ -18,6 +18,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/classStyleBinding">Class Style Binding</RouterLink>
         <RouterLink to="/conditionalRendering">Conditional Rendering</RouterLink>
         <RouterLink to="/listRendering">List Rendering</RouterLink>
+        <RouterLink to="/VModelCase">VModel Case</RouterLink>
       </nav>
     </div>
   </header>
