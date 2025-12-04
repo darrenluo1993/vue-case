@@ -52,6 +52,11 @@ const router = createRouter({
       name: 'TransmitAttrs',
       component: () => import('../views/TransmitAttrs.vue'),
     },
+    {
+      path: '/SlotCase',
+      name: 'SlotCase',
+      component: () => import('../views/SlotCase.vue'),
+    },
   ],
 })
 

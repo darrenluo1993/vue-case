@@ -20,6 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/listRendering">List Rendering</RouterLink>
         <RouterLink to="/VModelCase">VModel Case</RouterLink>
         <RouterLink to="/TransmitAttrs">Transmit Attrs</RouterLink>
+        <RouterLink to="/SlotCase">Slot Case</RouterLink>
       </nav>
     </div>
   </header>
