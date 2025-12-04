@@ -46,7 +46,12 @@ const router = createRouter({
       path: '/VModelCase',
       name: 'VModelCase',
       component: () => import('../views/VModelCase.vue'),
-    }
+    },
+    {
+      path: '/TransmitAttrs',
+      name: 'TransmitAttrs',
+      component: () => import('../views/TransmitAttrs.vue'),
+    },
   ],
 })
 

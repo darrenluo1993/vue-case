@@ -19,6 +19,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/conditionalRendering">Conditional Rendering</RouterLink>
         <RouterLink to="/listRendering">List Rendering</RouterLink>
         <RouterLink to="/VModelCase">VModel Case</RouterLink>
+        <RouterLink to="/TransmitAttrs">Transmit Attrs</RouterLink>
       </nav>
     </div>
   </header>
