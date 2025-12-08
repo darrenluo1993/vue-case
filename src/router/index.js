@@ -57,6 +57,11 @@ const router = createRouter({
       name: 'SlotCase',
       component: () => import('../views/SlotCase.vue'),
     },
+    {
+      path: '/ProvideInjectCase',
+      name: 'ProvideInjectCase',
+      component: () => import('../views/ProvideInjectCase.vue'),
+    },
   ],
 })
 

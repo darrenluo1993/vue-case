@@ -14,5 +14,7 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(ElementPlus)
+// 应用层Provide
+app.provide('hello', 'Hello VueJS!')
 
 app.mount('#app')
