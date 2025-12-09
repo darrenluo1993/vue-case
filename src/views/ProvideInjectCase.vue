@@ -1,6 +1,10 @@
 <script>
+import ProvideCase from '@/components/ProvideCase.vue'
+import SymbolProvideCase from '@/components/SymbolProvideCase.vue'
+
 export default {
-  name: 'ProvideInjectCass',
+  name: 'ProvideInjectCase',
+  components: { SymbolProvideCase, ProvideCase },
   // 如果有多个父组件提供了相同键的数据，注入将解析为组件链上最近的父组件所注入的值。
   inject: {
     message: {
@@ -21,6 +25,10 @@ export default {
   <div>
     <b style="display: block">{{ message }}</b>
     <b style="display: block">{{ reversedMessage }}</b>
+    <hr />
+    <ProvideCase />
+    <hr />
+    <SymbolProvideCase />
   </div>
 </template>
 
