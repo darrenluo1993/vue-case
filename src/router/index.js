@@ -72,6 +72,11 @@ const router = createRouter({
       name: 'AsyncComponent1',
       component: () => import('../views/AsyncComponent1.vue'),
     },
+    {
+      path: '/CompositionAPICase',
+      name: 'CompositionAPICase',
+      component: () => import('../views/CompositionAPICase.vue'),
+    },
   ],
 })
 
