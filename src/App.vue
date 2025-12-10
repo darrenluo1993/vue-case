@@ -22,6 +22,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/TransmitAttrs">Transmit Attrs</RouterLink>
         <RouterLink to="/SlotCase">Slot Case</RouterLink>
         <RouterLink to="/ProvideInjectCase">Provide Inject Case</RouterLink>
+        <RouterLink to="/AsyncComponent">Async Component</RouterLink>
+        <RouterLink to="/AsyncComponent1">Async Component1</RouterLink>
       </nav>
     </div>
   </header>

@@ -62,6 +62,16 @@ const router = createRouter({
       name: 'ProvideInjectCase',
       component: () => import('../views/ProvideInjectCase.vue'),
     },
+    {
+      path: '/AsyncComponent',
+      name: 'AsyncComponent',
+      component: () => import('../views/AsyncComponent.vue'),
+    },
+    {
+      path: '/AsyncComponent1',
+      name: 'AsyncComponent1',
+      component: () => import('../views/AsyncComponent1.vue'),
+    },
   ],
 })
 
