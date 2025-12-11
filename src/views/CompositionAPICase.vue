@@ -1,5 +1,7 @@
 <script setup>
-import { onActivated, onMounted, onUnmounted, reactive, ref } from 'vue'
+import { useFetch } from '@/components/js/fetch.js'
+import { useMouse } from '@/components/js/mouse.ext.js'
+import { computed, onActivated, onMounted, onUnmounted, reactive, ref } from 'vue'
 
 const count1 = ref(0)
 
@@ -26,6 +28,13 @@ onUnmounted(() => {
   window.removeEventListener('mousemove', update)
 })
 
+const { x1, y1 } = useMouse()
+
+const id = ref(1)
+const baseURL = ref('https://jsonplaceholder.typicode.com/todos/')
+const url = computed(() => baseURL.value + id.value)
+const { data, error } = useFetch(url)
+
 onActivated(() => {
   console.log('activated')
 })
@@ -38,7 +47,6 @@ onActivated(() => {
     <button @click="state.count3++">count3 is: {{ state.count3 }}</button>
     <hr />
     <p>const raw = { count3: 0 }</p>
-    F
     <p>const state = reactive(raw)</p>
     <hr />
     <p class="explain">reactive() 返回的是一个原始对象的 Proxy，它和原始对象是不相等的：</p>
@@ -59,6 +67,13 @@ onActivated(() => {
     </p>
     <hr />
     <p class="explain">Mouse position is at: {{ x }}, {{ y }}</p>
+    <p class="explain">Mouse position is at: {{ x1 }}, {{ y1 }}</p>
+    <hr />
+    <p>请输入ID：<input v-model="id" placeholder="请输入ID" /></p>
+    <p>请输入BaseURL：<input v-model="baseURL" placeholder="请输入BaseURL" size="40" /></p>
+    <p>useFetch url: {{ url }}</p>
+    <p>useFetch data: {{ data }}</p>
+    <p>useFetch error: {{ error }}</p>
   </div>
 </template>
 
