@@ -28,7 +28,7 @@ onUnmounted(() => {
   window.removeEventListener('mousemove', update)
 })
 
-const { x1, y1 } = useMouse()
+const { x: x1, y: y1 } = useMouse()
 
 const id = ref(1)
 const baseURL = ref('https://jsonplaceholder.typicode.com/todos/')

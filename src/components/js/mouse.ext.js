@@ -2,13 +2,13 @@ import { ref } from 'vue'
 import { useEventListener } from './event'
 
 export function useMouse() {
-  const x1 = ref(0)
-  const y1 = ref(0)
+  const x = ref(0)
+  const y = ref(0)
 
   useEventListener(window, 'mousemove', (event) => {
-    x1.value = event.pageX
-    y1.value = event.pageY
+    x.value = event.pageX
+    y.value = event.pageY
   })
 
-  return { x1, y1 }
+  return { x, y }
 }

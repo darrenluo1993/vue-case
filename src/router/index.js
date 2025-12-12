@@ -77,6 +77,11 @@ const router = createRouter({
       name: 'CompositionAPICase',
       component: () => import('../views/CompositionAPICase.vue'),
     },
+    {
+      path: '/CustomDirectiveCase',
+      name: 'CustomDirectiveCase',
+      component: () => import('../views/CustomDirectiveCase.vue'),
+    },
   ],
 })
 

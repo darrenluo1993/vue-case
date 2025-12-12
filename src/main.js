@@ -17,4 +17,9 @@ app.use(ElementPlus)
 // 应用层Provide
 app.provide('hello', 'Hello VueJS!')
 
+// 将自定义指令全局注册到应用层级
+app.directive('focus', {
+  mounted: (el) => el.focus(),
+})
+
 app.mount('#app')

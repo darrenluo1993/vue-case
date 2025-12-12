@@ -25,6 +25,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/AsyncComponent">Async Component</RouterLink>
         <RouterLink to="/AsyncComponent1">Async Component1</RouterLink>
         <RouterLink to="/CompositionAPICase">Composition API Case</RouterLink>
+        <RouterLink to="/CustomDirectiveCase">Custom Directive Case</RouterLink>
       </nav>
     </div>
   </header>
