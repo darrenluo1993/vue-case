@@ -26,6 +26,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/AsyncComponent1">Async Component1</RouterLink>
         <RouterLink to="/CompositionAPICase">Composition API Case</RouterLink>
         <RouterLink to="/CustomDirectiveCase">Custom Directive Case</RouterLink>
+        <RouterLink to="/KeyAttrTransition">Key Attr Transition</RouterLink>
       </nav>
     </div>
   </header>

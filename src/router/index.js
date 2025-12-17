@@ -82,6 +82,11 @@ const router = createRouter({
       name: 'CustomDirectiveCase',
       component: () => import('../views/CustomDirectiveCase.vue'),
     },
+    {
+      path: '/KeyAttrTransition',
+      name: 'KeyAttrTransition',
+      component: () => import('../views/KeyAttrTransition.vue'),
+    },
   ],
 })
 
