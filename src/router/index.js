@@ -92,6 +92,11 @@ const router = createRouter({
       name: 'TransitionGroupCase',
       component: () => import('../views/TransitionGroupCase.vue'),
     },
+    {
+      path: '/DynamicComponent',
+      name: 'DynamicComponent',
+      component: () => import('../views/DynamicComponent.vue'),
+    },
   ],
 })
 

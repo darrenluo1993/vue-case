@@ -28,6 +28,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/CustomDirectiveCase">Custom Directive Case</RouterLink>
         <RouterLink to="/KeyAttrTransition">Key Attr Transition</RouterLink>
         <RouterLink to="/TransitionGroupCase">Transition Group Case</RouterLink>
+        <RouterLink to="/DynamicComponent">Dynamic Component</RouterLink>
       </nav>
     </div>
   </header>
