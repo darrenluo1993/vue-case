@@ -87,6 +87,11 @@ const router = createRouter({
       name: 'KeyAttrTransition',
       component: () => import('../views/KeyAttrTransition.vue'),
     },
+    {
+      path: '/TransitionGroupCase',
+      name: 'TransitionGroupCase',
+      component: () => import('../views/TransitionGroupCase.vue'),
+    },
   ],
 })
 
