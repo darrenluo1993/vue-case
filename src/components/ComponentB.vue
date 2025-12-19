@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'ComponentB',
   data() {
     return {
       msg: '',
