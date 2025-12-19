@@ -20,7 +20,7 @@ export default {
     <label><input type="radio" v-model="current" value="ComponentB" /> B</label>
     <label><input type="radio" v-model="current" value="ComponentC" /> C</label>
     <!-- 使用KeepAlive时，非活跃的组件将会被缓存！ -->
-    <KeepAlive>
+    <KeepAlive :max="2">
       <component :is="current" />
     </KeepAlive>
     <hr />

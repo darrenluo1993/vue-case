@@ -6,6 +6,12 @@ export default {
       count: 0,
     }
   },
+  activated() {
+    console.log('ComponentA activated')
+  },
+  deactivated() {
+    console.log('ComponentA deactivated')
+  },
 }
 </script>
 

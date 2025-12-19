@@ -6,6 +6,12 @@ export default {
       msg: '',
     }
   },
+  activated() {
+    console.log('ComponentB activated')
+  },
+  deactivated() {
+    console.log('ComponentB deactivated')
+  },
 }
 </script>
 
