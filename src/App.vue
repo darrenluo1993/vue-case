@@ -29,6 +29,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/KeyAttrTransition">Key Attr Transition</RouterLink>
         <RouterLink to="/TransitionGroupCase">Transition Group Case</RouterLink>
         <RouterLink to="/DynamicComponent">Dynamic Component</RouterLink>
+        <RouterLink to="/TeleportCase">Teleport Case</RouterLink>
       </nav>
     </div>
   </header>

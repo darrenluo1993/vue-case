@@ -97,6 +97,11 @@ const router = createRouter({
       name: 'DynamicComponent',
       component: () => import('../views/DynamicComponent.vue'),
     },
+    {
+      path: '/TeleportCase',
+      name: 'TeleportCase',
+      component: () => import('../views/TeleportCase.vue'),
+    },
   ],
 })
 
