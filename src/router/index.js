@@ -106,13 +106,34 @@ const router = createRouter({
       path: '/User/:username',
       name: 'User',
       component: () => import('../views/User.vue'),
+      children: [
+        {
+          path: 'posts/:postId',
+          name: 'UserPosts',
+          component: () => import('../views/UserPosts.vue'),
+        },
+        {
+          path: 'profile/:gender',
+          name: 'UserProfile',
+          component: () => import('../views/UserProfile.vue'),
+        },
+      ],
     },
     {
       path: '/BookInfo/id/:id/name/:name',
       name: 'BookInfo',
       component: () => import('../views/BookInfo.vue'),
     },
+    {
+      path: '/Chapter/:chapters([0-9a-zA-Z]+)+',
+      name: 'Chapter',
+      strict: true, // 不允许尾部斜线
+      sensitive: true, // 默认情况下，所有路由是不区分大小写的，并且能匹配带有或不带有尾部斜线的路由。例如，路由 /users 将匹配 /users、/users/、甚至 /Users/。这种行为可以通过 strict 和 sensitive 选项来修改，它们既可以应用在整个全局路由上，又可以应用于当前路由上。
+      component: () => import('../views/Chapter.vue'),
+    },
   ],
+  strict: true, // 默认情况下，所有路由是不区分大小写的，并且能匹配带有或不带有尾部斜线的路由。例如，路由 /users 将匹配 /users、/users/、甚至 /Users/。这种行为可以通过 strict 和 sensitive 选项来修改，它们既可以应用在整个全局路由上，又可以应用于当前路由上。
+  sensitive: true, // 大小写敏感
 })
 
 export default router
