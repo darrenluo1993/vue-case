@@ -30,6 +30,9 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/TransitionGroupCase">Transition Group Case</RouterLink>
         <RouterLink to="/DynamicComponent">Dynamic Component</RouterLink>
         <RouterLink to="/TeleportCase">Teleport Case</RouterLink>
+        <RouterLink to="/User/Darren Luo">DynamicRouterWithParams Case1</RouterLink>
+        <RouterLink to="/User/Zhang%20San">DynamicRouterWithParams Case2</RouterLink>
+        <RouterLink to="/BookInfo/id/159465/name/C语言编程入门?price=78.00">DynamicRouterWithParams Case3</RouterLink>
       </nav>
     </div>
   </header>

@@ -102,6 +102,16 @@ const router = createRouter({
       name: 'TeleportCase',
       component: () => import('../views/TeleportCase.vue'),
     },
+    {
+      path: '/User/:username',
+      name: 'User',
+      component: () => import('../views/User.vue'),
+    },
+    {
+      path: '/BookInfo/id/:id/name/:name',
+      name: 'BookInfo',
+      component: () => import('../views/BookInfo.vue'),
+    },
   ],
 })
 
