@@ -36,6 +36,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/Chapter/one1/two2/three3">DynamicRouterWithParams Case 4</RouterLink>
         <RouterLink to="/User/lisi/posts/159753">NestedRouterWithParams Case 1</RouterLink>
         <RouterLink to="/User/lisi/profile/male">NestedRouterWithParams Case 2</RouterLink>
+        <RouterLink to="/main-page">NamedView Case 1</RouterLink>
       </nav>
     </div>
   </header>

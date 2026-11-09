@@ -28,6 +28,6 @@
     "prettier": "3.6.2",
     "vite": "^7.1.11",
     "vite-plugin-vue-devtools": "^8.0.3",
-    "vitest": "^3.2.4"
+    "vitest": "^5.1.0"
   }
 }
