@@ -37,6 +37,10 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/User/lisi/posts/159753">NestedRouterWithParams Case 1</RouterLink>
         <RouterLink to="/User/lisi/profile/male">NestedRouterWithParams Case 2</RouterLink>
         <RouterLink to="/main-page">NamedView Case 1</RouterLink>
+        <RouterLink to="/home">RouterRedirect Case 1</RouterLink>
+        <RouterLink to="/main">RouterRedirect Case 2</RouterLink>
+        <RouterLink to="/userinfo/Wang Wu">RouterRedirect Case 3</RouterLink>
+        <RouterLink to="/userinfo1/Zhao Liu">RouterRedirect Case 4</RouterLink>
       </nav>
     </div>
   </header>
