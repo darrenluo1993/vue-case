@@ -41,6 +41,10 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/main">RouterRedirect Case 2</RouterLink>
         <RouterLink to="/userinfo/Wang Wu">RouterRedirect Case 3</RouterLink>
         <RouterLink to="/userinfo1/Zhao Liu">RouterRedirect Case 4</RouterLink>
+        <RouterLink to="/book/id/159465/name/C语言编程入门?price=78.00">RouterAlias Case 1</RouterLink>
+        <RouterLink to="/user/1000/profile/female">RouterAlias Case 2</RouterLink>
+        <RouterLink to="/1000/male">RouterAlias Case 3</RouterLink>
+        <RouterLink to="/user/1000/female">RouterAlias Case 4</RouterLink>
       </nav>
     </div>
   </header>

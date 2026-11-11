@@ -1,13 +1,13 @@
 <script>
 export default {
-  name: 'UserPosts',
+  name: "UserPosts",
 }
 </script>
 
 <template>
   <div>
     <h1>User Posts</h1>
-    <div>{{ $route.params.postId }}</div>
+    <div>postId: {{ $route.params.postId }}</div>
   </div>
 </template>
 

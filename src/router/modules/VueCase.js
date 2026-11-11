@@ -1,0 +1,103 @@
+// 视图组件
+import HomeView from "@/views/HomeView.vue"
+
+export default [
+  {
+    path: "/",
+    name: "home",
+    component: HomeView,
+  },
+  {
+    path: "/about",
+    name: "about",
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import("@/views/AboutView.vue"),
+  },
+  {
+    path: "/elementUICase",
+    name: "elementUICase",
+    component: () => import("@/views/ElementUICase.vue"),
+  },
+  {
+    path: "/computedProps",
+    name: "computedProps",
+    component: () => import("@/views/ComputedProps.vue"),
+  },
+  {
+    path: "/classStyleBinding",
+    name: "classStyleBinding",
+    component: () => import("@/views/ClassStyleBinding.vue"),
+  },
+  {
+    path: "/conditionalRendering",
+    name: "conditionalRendering",
+    component: () => import("@/views/ConditionalRendering.vue"),
+  },
+  {
+    path: "/listRendering",
+    name: "listRendering",
+    component: () => import("@/views/ListRendering.vue"),
+  },
+  {
+    path: "/VModelCase",
+    name: "VModelCase",
+    component: () => import("@/views/VModelCase.vue"),
+  },
+  {
+    path: "/TransmitAttrs",
+    name: "TransmitAttrs",
+    component: () => import("@/views/TransmitAttrs.vue"),
+  },
+  {
+    path: "/SlotCase",
+    name: "SlotCase",
+    component: () => import("@/views/SlotCase.vue"),
+  },
+  {
+    path: "/ProvideInjectCase",
+    name: "ProvideInjectCase",
+    component: () => import("@/views/ProvideInjectCase.vue"),
+  },
+  {
+    path: "/AsyncComponent",
+    name: "AsyncComponent",
+    component: () => import("@/views/AsyncComponent.vue"),
+  },
+  {
+    path: "/AsyncComponent1",
+    name: "AsyncComponent1",
+    component: () => import("@/views/AsyncComponent1.vue"),
+  },
+  {
+    path: "/CompositionAPICase",
+    name: "CompositionAPICase",
+    component: () => import("@/views/CompositionAPICase.vue"),
+  },
+  {
+    path: "/CustomDirectiveCase",
+    name: "CustomDirectiveCase",
+    component: () => import("@/views/CustomDirectiveCase.vue"),
+  },
+  {
+    path: "/KeyAttrTransition",
+    name: "KeyAttrTransition",
+    component: () => import("@/views/KeyAttrTransition.vue"),
+  },
+  {
+    path: "/TransitionGroupCase",
+    name: "TransitionGroupCase",
+    component: () => import("@/views/TransitionGroupCase.vue"),
+  },
+  {
+    path: "/DynamicComponent",
+    name: "DynamicComponent",
+    component: () => import("@/views/DynamicComponent.vue"),
+  },
+  {
+    path: "/TeleportCase",
+    name: "TeleportCase",
+    component: () => import("@/views/TeleportCase.vue"),
+  },
+]

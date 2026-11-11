@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'User',
+  name: "User",
   data() {
     let username = this.$route.params.username
     return {
@@ -18,7 +18,7 @@ export default {
           this.toPosts = `/User/${newUsername}/posts/4567532`
           this.toProfile = `/User/${newUsername}/profile/female2`
         }
-        console.log('Username: route.params.username changed from', oldUsername, 'to', newUsername)
+        console.log("Username: route.params.username changed from", oldUsername, "to", newUsername)
       },
     )
   },
@@ -40,12 +40,16 @@ export default {
 <template>
   <div>
     <h1>Username: {{ username }}</h1>
+    <!-- to Posts -->
     <router-link :to="`/User/${username}/posts/4567531`">to Posts1</router-link>
     <router-link :to="toPosts">to Posts2</router-link>
     <a href="javascript:void(0)" @click="toPost3">to Posts3</a>
+    <router-link :to="{ name: 'UserPosts', params: { username: username, postId: 4567534 } }">to Posts4</router-link>
+    <!-- to Profile -->
     <router-link :to="`/User/${username}/profile/female1`">to Profile1</router-link>
     <router-link :to="toProfile">to Profile2</router-link>
     <a href="javascript:void(0)" @click="toProfile3">to Profile3</a>
+    <router-link :to="{ name: 'UserProfile', params: { username: username, gender: 'female4' } }">to Profile4</router-link>
     <router-view />
   </div>
 </template>
