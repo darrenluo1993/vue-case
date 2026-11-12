@@ -1,4 +1,5 @@
 import RouterProps from "@/views/RouterProps.vue"
+import RouterProps1 from "@/views/RouterProps1.vue"
 
 import NamedViewRouterProps from "@/views/NamedViewRouterProps/NamedViewRouterProps.vue"
 import Left from "@/views/NamedViewRouterProps/Left.vue"
@@ -10,6 +11,32 @@ export default [
     path: "/RouterProps/:id/:name/:price",
     name: "RouterProps",
     props: true, // 当 props 设置为 true 时，route.params 将被设置为组件的 props。
+    component: RouterProps,
+  },
+  {
+    path: "/RouterProps1/:id/:name/:price",
+    name: "RouterProps1",
+    props: true, // 当 props 设置为 true 时，route.params 将被设置为组件的 props。
+    component: RouterProps1,
+  },
+  {
+    path: "/RouterProps2",
+    name: "RouterProps2",
+    props: {
+      id: 100010,
+      name: "VueJS",
+      price: "100.00",
+    },
+    component: RouterProps,
+  },
+  {
+    path: "/RouterProps3",
+    name: "RouterProps3",
+    props: (route) => ({
+      id: route.query.id,
+      name: route.query.name,
+      price: route.query.price,
+    }),
     component: RouterProps,
   },
   {

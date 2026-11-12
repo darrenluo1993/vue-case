@@ -1,6 +1,6 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router"
+import HelloWorld from "./components/HelloWorld.vue"
 </script>
 
 <template>
@@ -11,10 +11,10 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/elementUICase">Element UI Case</RouterLink>
-        <RouterLink to="/computedProps">Computed Props</RouterLink>
+        <RouterLink to="/" active-class="active-class" exact-active-class="exact-active-class">Home</RouterLink>
+        <RouterLink to="/about" activeClass="active-class" exactActiveClass="exact-active-class">About</RouterLink>
+        <RouterLink to="/elementUICase" active-class="active-class" exact-active-class="exact-active-class">Element UI Case</RouterLink>
+        <RouterLink to="/computedProps" activeClass="active-class" exactActiveClass="exact-active-class">Computed Props</RouterLink>
         <RouterLink to="/classStyleBinding">Class Style Binding</RouterLink>
         <RouterLink to="/conditionalRendering">Conditional Rendering</RouterLink>
         <RouterLink to="/listRendering">List Rendering</RouterLink>
