@@ -56,6 +56,11 @@
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
   }
+
+  :root {
+    --el-fill-color-blank: var(--vt-c-black);
+    --el-border-color: var(--vt-c-divider-dark-2);
+  }
 }
 
 *,
