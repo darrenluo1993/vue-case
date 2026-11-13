@@ -36,6 +36,14 @@
   --section-gap: 160px;
 }
 
+:root {
+  --el-font-size-base: 16px;
+  --el-menu-item-height: 30px;
+  --el-color-primary: hsla(160, 100%, 37%, 1);
+  --el-text-color-primary: hsla(160, 100%, 37%, 1);
+  --el-color-primary-light-9: hsla(160, 100%, 37%, 0.2);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);
